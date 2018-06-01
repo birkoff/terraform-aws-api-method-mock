@@ -2,8 +2,6 @@ provider "aws" {
   region = "${var.region}"
 }
 
-data "aws_caller_identity" "current" {}
-
 resource "aws_api_gateway_method" "api-method" {
   rest_api_id   = "${var.api_id}"
   resource_id   = "${var.api_resource_id}"
