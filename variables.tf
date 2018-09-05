@@ -25,3 +25,7 @@ variable "allow_methods" {
 variable "authorization" {
   type = "string"
 }
+
+variable "integration_http_method" {
+  type = "string"
+}

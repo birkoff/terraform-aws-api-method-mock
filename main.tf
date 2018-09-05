@@ -14,7 +14,7 @@ resource "aws_api_gateway_integration" "api-method-integration" {
   rest_api_id             = "${var.api_id}"
   resource_id             = "${var.api_resource_id}"
   http_method             = "${aws_api_gateway_method.api-method.http_method}"
-  integration_http_method = "${var.http_method}"
+  integration_http_method = "${var.integration_http_method}"
   type                    = "MOCK"
   content_handling        = "CONVERT_TO_TEXT"
 
