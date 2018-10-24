@@ -29,3 +29,7 @@ variable "authorization" {
 variable "integration_http_method" {
   type = "string"
 }
+
+variable "allowed_origins" {
+  type = "string"
+}
